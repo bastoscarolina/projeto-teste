@@ -1,0 +1,145 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+}
+ul{
+    list-style: none;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    box-shadow: 1px 1px 10px 1px #fff;
+}
+header img{
+    width: 25%;
+    margin-top: 10px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    padding: 0 15px;
+    border-bottom: 1px dashed #fff;
+}
+header ul li a{
+    transition: 300ms;
+}
+header ul li a:hover{
+    color:rgb(130, 195, 248)
+}
+body{
+    background: url(./pexels-frank-cone-3573555.jpg) #0d457e no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: luminosity ;
+}
+.container{
+    text-align: center;
+}
+.container .name h1{
+    font-size: 70px;
+}
+.container .name h5{
+    font-size: 20px;
+}
+#arrow{
+    font-size: xx-large;
+    cursor: pointer;
+    animation: blink .7s steps(5, start) infinite;
+}
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+#animation{
+    transition: 300ms;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+.active{
+    display: block !important;
+}
+.container #about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 700;
+    transition: 300ms;
+}
+.container #about p:hover {
+    background-color: #0d457ecb;
+}
+.form{
+    width: 40%;
+    margin: 10px auto;
+    border: thick double #fff
+}
+input{
+    background-color: white;
+}
+.form input{
+    width: 50%;
+    margin: 10px 0;
+}
+.form button{
+    background-color:#0d457ecb;
+    width: 25%;
+    cursor: pointer;
+    transition: 300ms;
+    margin: 10px 0;
+}
+.form button:hover{
+    background-color:#fff;
+    color: #0d457ecb;
+    font-weight: bold;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.flex div {
+    border: 1px solid #fff;
+    margin: 10px;
+    flex-basis: 100%;
+    max-width: 30%;
+    background-color: #0d457ecb ;
+}
+.flex img{
+    max-width: 100%;
+}
+@media only screen and (max-width:768px){
+    .form {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:480px){
+    header img{
+        width: 50px;
+    }
+    .container .name h1{
+        font-size: 35px;
+    }
+    .container .name h5{
+        font-size: 10px;
+    }
+    .container #about p{
+        max-width: 80%;
+        text-align: justify;
+    }
+    .flex{
+        width: 100%;
+    }
+    .form {
+        width: 80%;
+    }
+}
